@@ -1,5 +1,9 @@
 {
   "lightify": "LOCAL_IP_OF_LIGHTIFY_GATEWAY",
   "heatingMac": "FRIENDLY_MAC_OF_HEATING_UNIT_PLUG",
-  "lightMac": "FRIENDLY_MAC_OF_LIGHT_PLUG"
+  "lightMac": "FRIENDLY_MAC_OF_LIGHT_PLUG",
+  "temperature": {
+    "min": 24,
+    "max": 28
+  }
 }
