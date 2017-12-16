@@ -2,9 +2,6 @@
   "name": "chili",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "build": "babel src -d ./"
-  },
   "author": "Daniel Holzmann <d@velopment.at>",
   "license": "MIT",
   "dependencies": {
