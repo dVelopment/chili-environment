@@ -13,16 +13,16 @@ function check({ status, friendlyMac }) {
    const { max, min } = config.temperature;
    if (temperature > max && status) {
      // turn off
-     console.log(`current temperature of ${temperature}°C is too high (max: ${max})`);
+     console.log(`current temperature of ${temperature.toFixed(2)}°C is too high (max: ${max})`);
      return connection.nodeOnOff(friendlyMac, 0);
    } else if (temperature < min && !status) {
      // turn on
-     console.log(`current temperature of ${temperature}°C is too low (min: ${min})`);
+     console.log(`current temperature of ${temperature.toFixed(2)}°C is too low (min: ${min})`);
      return connection.nodeOnOff(friendlyMac, 1);
    } else if (status) {
-     console.log(`current temperature of ${temperature}°C is too low, but heating is already running (min: ${min})`);
+     console.log(`current temperature of ${temperature.toFixed(2)}°C is too low, but heating is already running (min: ${min})`);
    } else if (!status) {
-     console.log(`current temperature of ${temperature}°C is too high, but heating is already turned off (max: ${max})`);
+     console.log(`current temperature of ${temperature.toFixed(2)}°C is too high, but heating is already turned off (max: ${max})`);
    }
 }
 
