@@ -20,4 +20,4 @@ Chili growing environment control
 4. replace `LOCAL_IP_OF_LIGHTIFY_GATEWAY` in `config.json` with the IP of your Lightify gateway
 5. run `npm install` and then `./discover` to show all Lightify products connected to your gateway.
 6. get the `friendlyMac` value of the plug connected to your heating unit and put it into your `config.json` (replace `FRIENDLY_MAC_OF_HEATING_UNIT_PLUG` with it).
-7. running `./toggle_heat` should not toggle the plug's status.
+7. running `./toggle_heat` should now toggle the plug's status.
