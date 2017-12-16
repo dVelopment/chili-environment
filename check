@@ -19,6 +19,8 @@ function check({ status, friendlyMac }) {
      // turn on
      console.log(`current temperature of ${temperature}°C is too low (min: ${min})`);
      return connection.nodeOnOff(friendlyMac, 1);
+   } else {
+     console.log(`current temperature of ${temperature}°C is just right (min: ${min}, max: ${max})`);
    }
 }
 
