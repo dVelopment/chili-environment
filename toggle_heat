@@ -6,14 +6,14 @@
  const connection = new lightify.lightify(config.lightify);
  connection.connect()
   .then(() => connection.discover())
-  .then(data => {data.result
+  .then(data => data.result
     .find(entry => entry.friendlyMac === config.heatingMac))
   .then((data) => {
     if (data) {
       const status = !(data.status === 1);
       return connection.nodeOnOff(data.friendlyMac, status)
     }
-  }})
+  })
   .then(() => connection.dispose())
   .catch((error) => {
     console.error('error', error);
